@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wizard Rooms</title>
+  <link rel="icon" type="image/png" href="assets/lightning.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="shell">
+    <div class="topbar">
+      <div class="brand">
+        <div class="title">🧙‍♂️ Wizard Rooms</div>
+        <div class="sub">10 rooms per map. Clear enemies to unlock doors. Find 💎, ❤️‍🩹, and ⚡.</div>
+      </div>
+      <div class="actions">
+        <div class="pill">Seed <b id="seedTxt">-</b></div>
+        <button id="btnNew">New Run</button>
+        <button id="btnRestart">Restart (R)</button>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="main">
+        <div class="boardCard">
+          <div class="boardMeta">
+            <div class="hint">
+              Move: <kbd>Arrow Keys</kbd> &nbsp; Attack: walk into 😈 (you stay put) &nbsp; Use ⚡: <kbd>F</kbd> &nbsp; Restart: <kbd>R</kbd>
+            </div>
+          </div>
+
+          <div id="board" class="board" style="--w:17;"></div>
+
+          <div id="overlay" class="overlay" data-open="false">
+            <div class="overlayBox">
+              <h2 id="ovTitle">Game Over</h2>
+              <p id="ovDesc">You got bonked by demons.</p>
+              <div class="row">
+                <button id="btnAgain">Play Again</button>
+                <button id="btnNew2">New Seed</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="head">Log</div>
+          <div class="body">
+            <div id="log" class="log"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="side">
+        <div class="card">
+          <div class="head">Stats</div>
+          <div class="body">
+            <div class="stats">
+              <div class="stat">
+                <div class="label">Health</div>
+                <div class="value" id="hpTxt">-</div>
+              </div>
+              <div class="stat">
+                <div class="label">Currency</div>
+                <div class="value" id="gemTxt">-</div>
+              </div>
+              <div class="stat">
+                <div class="label">Room</div>
+                <div class="value" id="roomTxt">-</div>
+              </div>
+              <div class="stat">
+                <div class="label">⚡ Power</div>
+                <div class="value" id="powTxt">-</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="head">Rooms</div>
+          <div class="body">
+            <div id="roomsList" class="roomsList"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

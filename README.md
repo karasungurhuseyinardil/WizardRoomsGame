@@ -2,6 +2,8 @@
 
 Wizard Rooms is a strategic, grid-based dungeon crawler game played directly in your browser. Navigate through mysterious rooms, defeat demons, and manage your resources to survive the magic!
 
+🎮 **Play it here:**  
+https://karasungurhuseyinardil.github.io/WizardRoomsGame/
 
 ## ✨ Features
 
